@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-
+  <script src="assets/js/app.js" defer></script>
   <title>CGS | Clases de inglés personalizadas</title>
 </head>
 
@@ -53,9 +53,8 @@
       </div>
     </section>
     <section class="container-fluid">
-<!-- TIEMPOS VERBALES -->
+      <!-- TIEMPOS VERBALES -->
       <h2 class="text-center p-5 vocabulario-heading">Tiempos verbales esenciales</h2>
-
       <!-- Carousel Large -->
       <div class="container d-none d-lg-block">
         <div class="row mb-5">
@@ -65,12 +64,12 @@
               <li data-target="#carousel" data-slide-to="1"></li>
             </ol>
             <div class="carousel-inner">
+              <!-- Slide 1 -->
               <div class="carousel-item active">
-                <!-- Slide 1 -->
                 <div>
                   <div class="slide-box">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_WQqASb4HaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iK8fjrta0y0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MopQrF2liNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OrfqL0GNedk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OsW5sV3GMDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                   </div>
@@ -143,11 +142,12 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
       <!-- PALABRAS MÁS USADAS -->
-
       <h2 class="text-center p-5 vocabulario-heading">Palabras más usadas</h2>
-
+      <div id="video-container">
+        <div class="close">&times;</div>
+        <iframe class="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <!-- Carousel Large -->
       <div class="container d-none d-lg-block">
         <div class="row mb-5">
@@ -161,9 +161,9 @@
                 <!-- Slide 1 -->
                 <div>
                   <div class="slide-box">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TRUFC7oejww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MX3xWT8TwmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e33vwOw8jl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="videos" src="assets/images/pmu1.jpg" onClick="ShowVideo('https://www.youtube.com/embed/TRUFC7oejww')" />
+                    <img class="videos" src="assets/images/pmu2.jpg" onClick="ShowVideo('https://www.youtube.com/embed/MX3xWT8TwmQ')" />
+                    <img class="videos" src="assets/images/pmu3.jpg" onClick="ShowVideo('https://www.youtube.com/embed/e33vwOw8jl0')" />
                   </div>
                 </div>
           </div>
