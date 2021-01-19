@@ -52,56 +52,57 @@
           mejor!</p>
       </div>
     </section>
-    <section class="container-fluid">
+    <section class="container">
       <!-- TIEMPOS VERBALES -->
       <h2 class="text-center p-5 vocabulario-heading">Tiempos verbales esenciales</h2>
       <!-- Reproductor de video 1 -->
-      <div id="video-container">
-        <div class="close">&times;</div>
-        <iframe class="video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <!-- Carousel Large -->
-      <div class="container d-none d-lg-block">
-        <div class="row mb-5">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                <div>
-                  <div class="slide-box">
-                    <img class="videos" src="assets/images/tiempos-verb1.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/mwh_IWwwN8Y')" />
-                    <img class="videos" src="assets/images/tiempos-verb2.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/UeKZ6Mm-SlY')" />
-                    <img class="videos" src="assets/images/tiempos-verb3.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/m4TxnbuFV1M')" />
+      <div class="slider-container">
+        <div id="video-container">
+          <div class="close">&times;</div>
+          <iframe class="video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Carousel Large -->
+        <div class="container d-none d-lg-block">
+          <div class="row mb-5">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div>
+                    <div class="slide-box">
+                      <img class="videos" src="assets/images/tiempos-verb1.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/mwh_IWwwN8Y')" />
+                      <img class="videos" src="assets/images/tiempos-verb2.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/UeKZ6Mm-SlY')" />
+                      <img class="videos" src="assets/images/tiempos-verb3.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/m4TxnbuFV1M')" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div>
+                    <div class="slide-box">
+                      <img class="videos" src="assets/images/tiempos-verb4.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/MopQrF2liNg')" />
+                      <img class="videos" src="assets/images/tiempos-verb5.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/OrfqL0GNedk')" />
+                      <img class="videos" src="assets/images/tiempos-verb6.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/OsW5sV3GMDM')" />
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <div>
-                  <div class="slide-box">
-                    <img class="videos" src="assets/images/tiempos-verb4.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/MopQrF2liNg')" />
-                    <img class="videos" src="assets/images/tiempos-verb5.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/OrfqL0GNedk')" />
-                    <img class="videos" src="assets/images/tiempos-verb6.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/OsW5sV3GMDM')" />
-                  </div>
-                </div>
-              </div>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
-
       <!-- Carousel Responsive -->
 
       <div id="carouselExampleIndicators" class="carousel slide d-block d-lg-none" data-ride="carousel">
