@@ -353,6 +353,9 @@ a:visited {
         width: 300px;
         margin-left: 300px;
     }
+    .the-title {
+        display: none;
+    }
     /*FOOTER*/
     .footer {
         position: relative;
@@ -1117,9 +1120,3 @@ a:visited {
     }
 }
 
-.tituloContacto {
-    display: none;
-}
-.hoa {
-    display: block;
-}
