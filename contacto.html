@@ -55,18 +55,18 @@
             <span class="d-none d-lg-block">
                 <img src="assets/images/contacto.jpg" alt="" class="img-fluid" />
             </span>
-            <form action="" class="bg-blue">
+            <form class="bg-blue" method="POST" action="contact.php" role="form">
               <div class="form-inputs">
                 <div class="form-group">
-                    <input type="name" name="nombre" placeholder="Nombre" class="form-control">
+                    <input type="name" name="nombre" placeholder="Nombre" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="E-mail" class="form-control">
+                    <input type="email" name="email" placeholder="E-mail" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje" class="form-control"></textarea>
+                    <textarea name="message" id="" cols="30" rows="5" placeholder="Mensaje..." class="form-control" required></textarea>
                 </div>
-                <button class="form-btn">ENVIAR</button>
+                <button type="submit" class="form-btn">ENVIAR</button>
               </div>
             </form>
         </section>
