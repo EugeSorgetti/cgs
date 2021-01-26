@@ -704,6 +704,10 @@ a:visited {
         top: 50%;
         left: 35%;
     }
+    /*PRACTICA*/
+    #video-container, #video-container2 {
+        display: none;
+    }
     /*CONTACTO*/
     .contacto {
         display: flex;
@@ -808,6 +812,10 @@ a:visited {
         margin: 30px;
         padding: 10px;
         background-color: #e4c38a;
+    }
+    /*PRACTICA*/
+    #video-container, #video-container2 {
+        display: none;
     }
 }
 
@@ -990,6 +998,9 @@ a:visited {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    #video-container, #video-container2 {
+        display: none;
     }
     /*CURSOS*/
     .curso-container {
