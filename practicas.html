@@ -8,15 +8,15 @@
   <meta name="description" content="Videos, diagramas y prácticas para ayudarte a estudiar inglés"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/video-slider.js" defer></script>
   <title>CGS | Clases de inglés personalizadas</title>
 </head>
 
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a href="index.html"><img src="images/logocgs.png" alt="logo" height="70px"></a>
+      <a href="index.html"><img src="assets/images/logocgs.png" alt="logo" height="70px"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,54 +52,57 @@
           mejor!</p>
       </div>
     </section>
-    <section class="container-fluid">
-<!-- TIEMPOS VERBALES -->
+    <section class="container">
+      <!-- TIEMPOS VERBALES -->
       <h2 class="text-center p-5 vocabulario-heading">Tiempos verbales esenciales</h2>
-
-      <!-- Carousel Large -->
-      <div class="container d-none d-lg-block">
-        <div class="row mb-5">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carousel" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+      <!-- Reproductor de video 1 -->
+      <div class="slider-container">
+        <div id="video-container">
+          <div class="close">&times;</div>
+          <iframe class="video" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Carousel Large -->
+        <div class="container d-none d-lg-block">
+          <div class="row mb-5">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+              </ol>
+              <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div>
-                  <div class="slide-box">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_WQqASb4HaI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iK8fjrta0y0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/OsW5sV3GMDM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <div class="carousel-item active">
+                  <div>
+                    <div class="slide-box">
+                      <img class="videos" src="assets/images/tiempos-verb1.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/mwh_IWwwN8Y')" />
+                      <img class="videos" src="assets/images/tiempos-verb2.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/UeKZ6Mm-SlY')" />
+                      <img class="videos" src="assets/images/tiempos-verb3.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/m4TxnbuFV1M')" />
+                    </div>
+                  </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                  <div>
+                    <div class="slide-box">
+                      <img class="videos" src="assets/images/tiempos-verb4.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/MopQrF2liNg')" />
+                      <img class="videos" src="assets/images/tiempos-verb5.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/OrfqL0GNedk')" />
+                      <img class="videos" src="assets/images/tiempos-verb6.jpg" onClick="ShowSlider1('https://www.youtube.com/embed/OsW5sV3GMDM')" />
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <div>
-                  <div class="slide-box">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mwh_IWwwN8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UeKZ6Mm-SlY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/m4TxnbuFV1M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                  </div>
-                </div>
-              </div>
+              <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
       </div>
-
       <!-- Carousel Responsive -->
 
       <div id="carouselExampleIndicators" class="carousel slide d-block d-lg-none" data-ride="carousel">
@@ -143,11 +146,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
       <!-- PALABRAS MÁS USADAS -->
-
       <h2 class="text-center p-5 vocabulario-heading">Palabras más usadas</h2>
-
+      <!-- Reproductor de video 2 -->
+      <div id="video-container2">
+        <div class="close2">&times;</div>
+        <iframe class="video2" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
       <!-- Carousel Large -->
       <div class="container d-none d-lg-block">
         <div class="row mb-5">
@@ -161,9 +166,9 @@
                 <!-- Slide 1 -->
                 <div>
                   <div class="slide-box">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TRUFC7oejww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MX3xWT8TwmQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e33vwOw8jl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="videos2" src="assets/images/pmu1.jpg" onClick="ShowSlider2('https://www.youtube.com/embed/TRUFC7oejww')" />
+                    <img class="videos2" src="assets/images/pmu2.jpg" onClick="ShowSlider2('https://www.youtube.com/embed/MX3xWT8TwmQ')" />
+                    <img class="videos2" src="assets/images/pmu3.jpg" onClick="ShowSlider2('https://www.youtube.com/embed/e33vwOw8jl0')" />
                   </div>
                 </div>
           </div>
@@ -208,13 +213,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="images/diagrama-get.png" alt="Phrasal verbs GET">
+              <img class="d-block w-100" src="assets/images/diagrama-get.png" alt="Phrasal verbs GET" />
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/diagrama-take.png" alt="Phrasal verbs TAKE">
+              <img class="d-block w-100" src="assets/images/diagrama-take.png" alt="Phrasal verbs TAKE" />
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="images/diagrama-look.png" alt="Phrasal verbs LOOK">
+              <img class="d-block w-100" src="assets/images/diagrama-look.png" alt="Phrasal verbs LOOK" />
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -264,14 +269,14 @@
   <footer class="container-fluid footer">
     <div class="logo-footer text-center">
       <div>
-        <img src="images/logocgs.png" alt="Logo">
+        <img src="assets/images/logocgs.png" alt="Logo" />
       </div>
     </div>
     <div class="contacto-footer">
       <p class="text-center">Contacto</p>
       <div>
-        <a href="https://wa.link/dot98z" target="_blank"><img src="images/logo-whatsapp.svg" alt="WhatsApp"></a>
-        <a href="mailto:carlotags@gmail.com" target="_blank"><img src="images/logo-gmail.svg" alt="e-mail"></a>
+        <a href="https://wa.link/dot98z" target="_blank"><img src="assets/images/logo-whatsapp.svg" alt="WhatsApp" /></a>
+        <a href="mailto:carlotags@gmail.com" target="_blank"><img src="assets/images/logo-gmail.svg" alt="e-mail" /></a>
       </div>
     </div>
     <div class="copyright-footer text-center">
